@@ -19,5 +19,8 @@
     },
     "plugins": ["jest"],
     "rules": {
+    },
+    "settings": {
+        "import/core-modules": ["eslint-plugin-jest"]
     }
 }
