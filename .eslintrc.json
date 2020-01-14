@@ -1,10 +1,13 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest/globals": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -14,6 +17,7 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "plugins": ["jest"],
     "rules": {
     }
 }
