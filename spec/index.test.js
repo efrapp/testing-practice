@@ -16,7 +16,7 @@ test('string reversed', () => {
 
 test('arithmetic operations', () => {
   expect(calculator.add(1, 2)).toBe(3);
-  expect(calculator.subract(10, 4)).toBe(6);
+  expect(calculator.subtract(10, 4)).toBe(6);
   expect(calculator.divide(60, 3)).toBe(20);
   expect(calculator.multiply(30, 7)).toBe(210);
 });
