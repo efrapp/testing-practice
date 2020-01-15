@@ -3,6 +3,6 @@ module.exports = {
     return str.replace(/^./, str[0].toUpperCase());
   },
   reverseString(str) {
-    return str;
+    return str.split('').reverse().join('');
   },
 };

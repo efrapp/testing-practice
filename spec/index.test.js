@@ -8,4 +8,8 @@ test('first character capitalized', () => {
 
 test('string reversed', () => {
   expect(reverseString('javascript')).toBe('tpircsavaj');
+  expect(reverseString('t')).toBe('t');
+  expect(reverseString('Javascript the best language'))
+    .toBe('egaugnal tseb eht tpircsavaJ');
+  expect(reverseString(' ')).toBe(' ');
 });
