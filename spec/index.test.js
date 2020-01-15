@@ -1,3 +1,5 @@
-test('test capitalize method', () => {
-  expect(1).toBe(1);
+const { capitalize } = require('../index');
+
+test('first character capitalized', () => {
+  expect(capitalize('javascript')).toBe('Javascript');
 });
