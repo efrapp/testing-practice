@@ -5,9 +5,7 @@
         "jest/globals": true
     },
     "extends": [
-        "airbnb-base",
-        "plugin:jest/recommended",
-        "plugin:jest/style"
+        "airbnb-base"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -19,8 +17,5 @@
     },
     "plugins": ["eslint-plugin-jest"],
     "rules": {
-    },
-    "settings": {
-        "import/core-modules": ["eslint-plugin-jest"]
     }
 }
