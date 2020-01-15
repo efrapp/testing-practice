@@ -24,9 +24,9 @@ test('arithmetic operations', () => {
 });
 
 describe('caesar method', () => {
-  test('with a shift of 1', () => {
-    const plainText = 'defend the east wall of the castle';
-    const cipherText = 'efgfoe uif fbtu xbmm pg uif dbtumf';
+  test('with an entire string and a shift of 1', () => {
+    const plainText = 'defendtheeastwallofthecastle';
+    const cipherText = 'efgfoeuiffbtuxbmmpguifdbtumf';
 
     expect(caesar(plainText, 1)).toBe(cipherText);
   });
