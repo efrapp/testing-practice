@@ -1,4 +1,6 @@
-const { capitalize, reverseString, calculator } = require('../index');
+const {
+  capitalize, reverseString, calculator, caesar,
+} = require('../index');
 
 test('first character capitalized', () => {
   expect(capitalize('javascript')).toBe('Javascript');
@@ -19,4 +21,13 @@ test('arithmetic operations', () => {
   expect(calculator.subtract(10, 4)).toBe(6);
   expect(calculator.divide(60, 3)).toBe(20);
   expect(calculator.multiply(30, 7)).toBe(210);
+});
+
+describe('caesar method', () => {
+  test('with a shift of 1', () => {
+    const plainText = 'defend the east wall of the castle';
+    const cipherText = 'efgfoe uif fbtu xbmm pg uif dbtumf';
+
+    expect(caesar(plainText, 1)).toBe(cipherText);
+  });
 });
