@@ -17,10 +17,7 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": ["jest"],
+    "plugins": ["eslint-plugin-jest"],
     "rules": {
-    },
-    "settings": {
-        "import/core-modules": ["eslint-plugin-jest"]
     }
 }
