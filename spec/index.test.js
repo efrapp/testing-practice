@@ -30,4 +30,10 @@ describe('caesar method', () => {
 
     expect(caesar(plainText, 1)).toBe(cipherText);
   });
+  test('with non-word character included', () => {
+    const plainText = 'defend the east wall of the castle';
+    const cipherText = 'efgfoe uif fbtu xbmm pg uif dbtumf';
+
+    expect(caesar(plainText, 1)).toBe(cipherText);
+  });
 });
