@@ -28,6 +28,8 @@ module.exports = {
     return cipherText;
   },
   analyze(ary) {
+    if (ary.length === 0) return {};
+
     const average = () => ary.reduce((acc, current) => acc + current) / ary.length;
     const min = () => ary.reduce((acc, current) => (acc < current ? acc : current));
     const max = () => ary.reduce((acc, current) => (acc > current ? acc : current));
