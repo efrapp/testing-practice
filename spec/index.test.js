@@ -1,5 +1,5 @@
 const {
-  capitalize, reverseString, calculator, caesar,
+  capitalize, reverseString, calculator, caesar, analyze,
 } = require('../index');
 
 test('first character capitalized', () => {
@@ -47,5 +47,16 @@ describe('caesar method', () => {
     const cipherText = 'defend the east wall of the castle';
 
     expect(caesar(plainText, 0)).toBe(cipherText);
+  });
+});
+
+describe('anylize method', () => {
+  test('right values for each property', () => {
+    const analyzeResult = analyze([1, 8, 3, 4, 2, 6]);
+
+    expect(analyzeResult.average).toBe(4);
+    expect(analyzeResult.min).toBe(1);
+    expect(analyzeResult.max).toBe(8);
+    expect(analyzeResult.length).toBe(6);
   });
 });
