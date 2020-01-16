@@ -27,4 +27,17 @@ module.exports = {
 
     return cipherText;
   },
+  analyze(ary) {
+    const average = () => ary.reduce((acc, current) => acc + current) / ary.length;
+    const min = () => ary.reduce((acc, current) => (acc < current ? acc : current));
+    const max = () => ary.reduce((acc, current) => (acc > current ? acc : current));
+    const length = () => ary.length;
+
+    return {
+      average: average(),
+      min: min(),
+      max: max(),
+      length: length(),
+    };
+  },
 };
