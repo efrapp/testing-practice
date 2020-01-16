@@ -11,4 +11,16 @@ module.exports = {
     divide(a, b) { return a / b; },
     multiply(a, b) { return a * b; },
   },
+  caesar(text, key) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    const cipher = (chIndex) => (chIndex + key) % 26;
+    const strForEach = Array.prototype.forEach.bind(text);
+    let cipherText = '';
+
+    strForEach((c) => {
+      cipherText += alphabet[cipher(alphabet.indexOf(c))];
+    });
+
+    return cipherText;
+  },
 };
