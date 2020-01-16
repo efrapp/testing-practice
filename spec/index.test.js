@@ -59,4 +59,9 @@ describe('anylize method', () => {
     expect(analyzeResult.max).toBe(8);
     expect(analyzeResult.length).toBe(6);
   });
+  test('with empty array', () => {
+    const analyzeResult = analyze([]);
+
+    expect(analyzeResult).toEqual({});
+  });
 });
