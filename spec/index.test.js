@@ -36,4 +36,10 @@ describe('caesar method', () => {
 
     expect(caesar(plainText, 1)).toBe(cipherText);
   });
+  test('wrapping from z to a', () => {
+    const plainText = 'defend the east wall of the castle';
+    const cipherText = 'cdedmc sgd dzrs vzkk ne sgd bzrskd';
+
+    expect(caesar(plainText, 25)).toBe(cipherText);
+  });
 });
