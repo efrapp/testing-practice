@@ -18,7 +18,11 @@ module.exports = {
     let cipherText = '';
 
     strForEach((c) => {
-      cipherText += alphabet[cipher(alphabet.indexOf(c))];
+      if (/\W/.test(c)) {
+        cipherText += c;
+      } else {
+        cipherText += alphabet[cipher(alphabet.indexOf(c))];
+      }
     });
 
     return cipherText;
