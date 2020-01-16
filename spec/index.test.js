@@ -42,4 +42,10 @@ describe('caesar method', () => {
 
     expect(caesar(plainText, 25)).toBe(cipherText);
   });
+  test('without shifting', () => {
+    const plainText = 'defend the east wall of the castle';
+    const cipherText = 'defend the east wall of the castle';
+
+    expect(caesar(plainText, 0)).toBe(cipherText);
+  });
 });
