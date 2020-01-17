@@ -1,22 +1,17 @@
 {
     "env": {
-        "browser": true,
-        "es6": true,
-        "jest/globals": true
+      "browser": true,
+      "es6": true
     },
-    "extends": [
-        "airbnb-base",
-        "plugin:jest/recommended"
-    ],
+    "extends": ["airbnb-base"],
     "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+      "ecmaVersion": 2018,
+      "sourceType": "module"
     },
-    "plugins": ["eslint-plugin-jest"],
     "rules": {
     }
-}
+  }
