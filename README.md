@@ -19,10 +19,6 @@ We are using Test-Driven Development as the methodology to orchestrate our tests
 - Run `npm install` to install all the needed dependencies
 - To run the tests, execute the following command: `npm run test`
 
-## Live link
-
-
-
 ## Contributors
 
 - [Efrain Pinto](https://github.com/efrapp)
