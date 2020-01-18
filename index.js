@@ -13,7 +13,7 @@ module.exports = {
   },
   caesar(text, key) {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-    const cipher = (chIndex) => (chIndex + key) % 26;
+    const cipher = chIndex => (chIndex + key) % 26;
     const strForEach = Array.prototype.forEach.bind(text);
     let cipherText = '';
 
