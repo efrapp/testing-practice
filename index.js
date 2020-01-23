@@ -17,7 +17,7 @@ module.exports = {
     const strForEach = Array.prototype.forEach.bind(text);
     let cipherText = '';
 
-    strForEach((c) => {
+    strForEach(c => {
       if (/\W/.test(c)) {
         cipherText += c;
       } else {
